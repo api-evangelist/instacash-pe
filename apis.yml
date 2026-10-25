@@ -1,25 +1,79 @@
 aid: instacash-pe
+
 name: PreAuth (Instacash)
-description: 'PreAuth (Instacash) is a company surfaced via the API Evangelist harvest backlog (source:
-  vc-portfolio; backed by 500-global) and added to the network as a stub for full-pipeline profiling.'
+
+image: https://reevalua.com/img/new/thumb-b2c.png
+
+description: 'PreAuth (Instacash) is a company surfaced via the API Evangelist harvest backlog (source: vc-portfolio; backed by 500-global) and
+  added to the network as a stub for full-pipeline profiling.'
+
 url: https://raw.githubusercontent.com/api-evangelist/instacash-pe/refs/heads/main/apis.yml
+
 x-type: company
+
 x-source: harvest:vc-portfolio
-x-tier: stub
-x-tier-reason: harvest
+
+x-tier: profiled
+x-tier-reason: enrichment pass 2026-10-25 (modular-v1; was harvest)
+
 specificationVersion: '0.20'
+
 created: '2026-10-25'
+
 modified: '2026-10-25'
+
 tags:
 - Company
-apis: []
+
 maintainers:
 - FN: Kin Lane
   email: kin@apievangelist.com
 - FN: APIs.json
   email: info@apis.io
-x-backed-by:
-- 500-global
+
 common:
+- type: Compliance
+  url: https://reevalua.com/
+- type: LLMsTxt
+  url: llms/instacash-pe-llms.txt
+- type: Hosts
+  url: hosts/instacash-pe-hosts.yml
+- type: Vendors
+  url: vendors/instacash-pe-vendors.yml
+- type: TermsOfService
+  url: https://reevalua.com/terms
+- type: PrivacyPolicy
+  url: https://reevalua.com/privacy
+- type: Blog
+  url: https://reevalua.com/blog
+- type: TrustCenter
+  url: security/instacash-pe-trust-center.yml
+- type: DomainSecurity
+  url: security/instacash-pe-domain-security.yml
 - type: Website
   url: https://instacash.pe
+
+apis:
+- name: Instacash PE API
+  description: Instacash (Instacash PE) provides financial services API as described on their developer portal.
+  humanURL: https://reevalua.com/
+  baseURL: null
+  aid: instacash-pe:instacash-pe-api
+
+x-backed-by:
+- 500-global
+
+x-coverage:
+  state: unreadable
+  reason: js-rendered-docs
+  detail: Developer portal redirects to reevalua.com with JavaScript‑rendered pages, no machine‑readable spec found.
+  evidence:
+  - url: https://reevalua.com/
+    status: 200
+  checked: '2026-10-25'
+x-enrichment:
+  date: '2026-10-25'
+  status: enriched
+  artifacts_added: 11
+  pass: modular-v1
+  engine: identity=local,contract=local,surfaces=local,docs=local,regulatory=local

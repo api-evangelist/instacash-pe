@@ -1,0 +1,18 @@
+generated: '2026-10-25'
+method: none
+source:
+- https://zapier.com/apps/instacash-pe/integrations
+- https://zapier.com/apps/preauth-instacash/integrations
+- https://n8n.io/integrations/instacash-pe/
+- https://composio.dev/toolkits/instacash-pe
+- https://monid.ai/tools/instacash-pe
+checked:
+- https://composio.dev/toolkits/instacash-pe
+- https://monid.ai/tools/instacash-pe
+- https://n8n.io/integrations/instacash-pe/
+- https://zapier.com/apps/instacash-pe/integrations
+- https://zapier.com/apps/preauth-instacash/integrations
+summary: null
+marketplace_apps: []
+edges: []
+templates: []

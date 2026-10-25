@@ -1,0 +1,32 @@
+generated: '2026-10-25'
+source: https://reevalua.com/privacy
+method: probed
+signals:
+  data_subject_request:
+    evidence:
+      - source: https://reevalua.com/privacy
+        http_status: 200
+        fetched: /tmp/privacy.html
+        quote: "REEVALÚA reconoce y garantiza los derechos de acceso, rectificación, cancelación y oposición (derechos \"ARCO\") de los titulares de datos personales."
+        note: Provides ARCO rights to data subjects.
+  subprocessors:
+    evidence:
+      - source: https://reevalua.com/privacy
+        http_status: 200
+        fetched: /tmp/privacy.html
+        quote: "En el marco de las finalidades descritas en la presente Política, REEVALÚA podrá transferir datos personales ... a proveedores tecnológicos ubicados fuera del territorio de la República del Perú."
+        note: Mentions use of third‑party technology providers abroad.
+  ai_transparency:
+    evidence:
+      - source: https://reevalua.com/privacy
+        http_status: 200
+        fetched: /tmp/privacy.html
+        quote: "REEVALÚA podrá incorporar, actualizar, combinar, reemplazar o dejar de utilizar las herramientas, modelos, versiones y proveedores de inteligencia artificial que emplea para cumplir las finalidades antes descritas."
+        note: Discloses use of AI models and tools.
+  data_residency:
+    evidence:
+      - source: https://reevalua.com/privacy
+        http_status: 200
+        fetched: /tmp/privacy.html
+        quote: "Dichos proveedores podrán encontrarse en jurisdicciones fuera del Perú."
+        note: Indicates cross‑border data transfers.

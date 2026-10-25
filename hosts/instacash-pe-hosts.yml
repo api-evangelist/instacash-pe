@@ -1,0 +1,63 @@
+generated: '2026-10-25'
+method: derived
+source: the pre-flight dossier, apis.yml pointers, spec servers, well-known, vendors -- nothing fetched here
+generator: derive-hosts.py
+summary:
+  hosts: 4
+  own: 2
+  other_domain: 2
+  platform: 0
+  roles:
+  - api
+  - marketing
+  - website
+hosts:
+- host: api.instacash.pe
+  found_by:
+  - contract-discovery
+  types: []
+  serves: []
+  registrable_domain: instacash.pe
+  role: api
+  relation: own
+- host: api.reevalua.com
+  found_by:
+  - contract-discovery
+  types: []
+  serves: []
+  registrable_domain: reevalua.com
+  role: api
+  relation: other-domain
+- host: instacash.pe
+  found_by:
+  - pointer
+  - probed
+  - contract-discovery
+  - well-known
+  - vendor-detect
+  types:
+  - Website
+  serves:
+  - cdn
+  vendor: cloudfront
+  registrable_domain: instacash.pe
+  role: website
+  relation: own
+- host: reevalua.com
+  found_by:
+  - pointer
+  - apis[]
+  - probed
+  - site-links
+  - contract-discovery
+  - well-known
+  types:
+  - Compliance
+  - TermsOfService
+  - PrivacyPolicy
+  - Blog
+  serves:
+  - docs
+  registrable_domain: reevalua.com
+  role: marketing
+  relation: other-domain
